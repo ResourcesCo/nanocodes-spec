@@ -75,26 +75,30 @@ INSERT INTO cities (name, population) VALUES ($name, $pop)
 
 `#/params`
 
-- `{"name": "New York City-Newark-Jersey City, NY-NJ-PA MSA", "pop": 19216182}`
-- `{"name": "Los Angeles-Long Beach-Anaheim, CA MSA", "pop": 13214799}`
-- `{"name": "Chicago-Naperville-Elgin, IL-IN-WI MSA", "pop": 9458539}`
-- `{"name": "Dallas-Fort Worth-Arlington, TX MSA", "pop": 7573136}`
-- `{"name": "Houston-The Woodlands-Sugar Land, TX MSA", "pop": 7066141}`
-- `{"name": "Washington-Arlington-Alexandria, DC-VA-MD-WV MSA", "pop": 6280487}`
-- `{"name": "Miami-Fort Lauderdale-West Palm Beach, FL MSA", "pop": 6166488}`
-- `{"name": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD MSA", "pop": 6102434}`
-- `{"name": "Atlanta-Sandy Springs-Alpharetta, GA MSA", "pop": 6020364}`
-- `{"name": "Phoenix-Mesa-Chandler, AZ MSA", "pop": 4948203}`
-- `{"name": "Boston-Cambridge-Newton, MA-NH MSA", "pop": 4873019}`
-- `{"name": "San Francisco-Oakland-Berkeley, CA MSA", "pop": 4731803}`
-- `{"name": "Riverside-San Bernardino-Ontario, CA MSA", "pop": 4650631}`
-- `{"name": "Detroit–Warren–Dearborn, MI MSA", "pop": 4319629}`
-- `{"name": "Seattle-Tacoma-Bellevue, WA MSA", "pop": 3979845}`
-- `{"name": "Minneapolis-St. Paul-Bloomington, MN-WI MSA", "pop": 3654908}`
-- `{"name": "San Diego-Chula Vista-Carlsbad, CA MSA", "pop": 3338330}`
-- `{"name": "Tampa-St. Petersburg-Clearwater, FL MSA", "pop": 3194831}`
-- `{"name": "Denver-Aurora-Lakewood, CO MSA", "pop": 2967239}`
-- `{"name": "St. Louis, MO-IL MSA", "pop": 2803228}`
+```json
+[
+  {"name": "New York City-Newark-Jersey City, NY-NJ-PA MSA", "pop": 19216182},
+  {"name": "Los Angeles-Long Beach-Anaheim, CA MSA", "pop": 13214799},
+  {"name": "Chicago-Naperville-Elgin, IL-IN-WI MSA", "pop": 9458539},
+  {"name": "Dallas-Fort Worth-Arlington, TX MSA", "pop": 7573136},
+  {"name": "Houston-The Woodlands-Sugar Land, TX MSA", "pop": 7066141},
+  {"name": "Washington-Arlington-Alexandria, DC-VA-MD-WV MSA", "pop": 6280487},
+  {"name": "Miami-Fort Lauderdale-West Palm Beach, FL MSA", "pop": 6166488},
+  {"name": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD MSA", "pop": 6102434},
+  {"name": "Atlanta-Sandy Springs-Alpharetta, GA MSA", "pop": 6020364},
+  {"name": "Phoenix-Mesa-Chandler, AZ MSA", "pop": 4948203},
+  {"name": "Boston-Cambridge-Newton, MA-NH MSA", "pop": 4873019},
+  {"name": "San Francisco-Oakland-Berkeley, CA MSA", "pop": 4731803},
+  {"name": "Riverside-San Bernardino-Ontario, CA MSA", "pop": 4650631},
+  {"name": "Detroit–Warren–Dearborn, MI MSA", "pop": 4319629},
+  {"name": "Seattle-Tacoma-Bellevue, WA MSA", "pop": 3979845},
+  {"name": "Minneapolis-St. Paul-Bloomington, MN-WI MSA", "pop": 3654908},
+  {"name": "San Diego-Chula Vista-Carlsbad, CA MSA", "pop": 3338330},
+  {"name": "Tampa-St. Petersburg-Clearwater, FL MSA", "pop": 3194831},
+  {"name": "Denver-Aurora-Lakewood, CO MSA", "pop": 2967239},
+  {"name": "St. Louis, MO-IL MSA", "pop": 2803228}    
+]
+```
 
 This would pass the same information to the nanocode function as:
 
