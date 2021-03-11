@@ -52,7 +52,7 @@ nanocode document element within the same heading level.
 
 ## Fragment Elements
 
-A fragment element has a JSON pointer with the document URL.
+A fragment element has a pointer with the document URL.
 It is identified by a paragraph containing a single inline
 code block with the JSON pointer that starts with `#/`. The
 `#/` is recognizable as a JSON pointer and used in the popular
@@ -65,15 +65,20 @@ chosen because it isn't very widely used.
 
 Here is an example of an SQL query.
 
-`{"$fn": "https://nanocodes.dev/sql/pg"}`
+```json5
+{
+  $fn: 'https://nanocodes.dev/sql/pg',
+  $query: {$ref: 'query'},
+}
+```
 
-`#/query`
+`{$def: 'query'}`
 
 ```sql
 INSERT INTO cities (name, population) VALUES ($name, $pop)
 ```
 
-`#/params`
+`{$def: 'params'}`
 
 ```json
 [
